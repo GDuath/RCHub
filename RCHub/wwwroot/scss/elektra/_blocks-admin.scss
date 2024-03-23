@@ -1,0 +1,44 @@
+﻿@import "blocks";
+
+body {
+    background-color: rgba(218, 228, 235, 0.5);
+}
+
+.admin-header {
+    height: 60px;
+    background-color: #b6ff00;
+    padding-left: 250px;
+    background-color: #FFF;
+    border-top: 0;
+}
+
+@media (max-width: 48em) {
+    .admin-header {
+        padding-left: 10px;
+    }
+}
+
+#main {
+    padding: 1.5em;
+}
+
+/* Block overrides */
+
+.card-header {
+    padding: 20px !important;
+    background-color: #FFF !important;
+    border-bottom: 1px solid #EEE !important;
+}
+
+.card-block {
+    padding: 20px !important;
+
+}
+
+table {
+    margin-top: 1.5em;
+}
+
+.label {
+    border-radius: 0 !important;
+}

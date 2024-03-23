@@ -1,0 +1,109 @@
+﻿.btn {
+    position: relative;
+    transition: .2s ease;
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    /*-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;*/
+    transition: all .15s ease-in-out;
+    text-transform: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.btn-xs {
+    line-height: 1.4;
+    padding: 0.14286rem 0.5rem;
+    font-size: 0.78571rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    color: #FFF !important;
+    border: 1px solid $color-primary-dark;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: $color-primary-dark;
+}
+
+
+.btn-secondary {
+    background-color: $color-secondary;
+    color: #FFF !important;
+    border: 1px solid $color-secondary-dark;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    background-color: $color-secondary-dark;
+    color: #FFF;
+    border-color: transparent;
+}
+
+.btn-dark {
+    background-color: $color-gray;
+    color: #FFF;
+}
+
+.btn-dark:hover, .btn-dark:active {
+    background-color: $color-gray-dark;
+    color: #FFF;
+}
+
+.btn-transparent {
+    border-color: #FFF;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.btn-transparent:hover {
+    background-color: #FFF;
+    color: $color-primary;
+}
+
+.btn-danger {
+    background-color: $color-red;
+    color: #FFF !important;
+}
+
+.btn-danger:hover, .btn-danger:active {
+    background-color: $color-red-light;
+}
+
+.btn-warning {
+    background-color: $color-yellow;
+    color: #FFF !important;
+}
+
+.btn-danger:hover, .btn-danger:active {
+    background-color: $color-red-light;
+}

@@ -1,0 +1,26 @@
+﻿@page
+@model RCHub.Pages.Account.ProfileModel
+@{
+}
+
+@if (Model.MyDynmapTown != null)
+{
+    <p>My town: @Model.MyDynmapTown.Name</p>
+
+    @if (Model.MyTown == null)
+    {
+        <a asp-page="MyTown/Create">Add town details</a>
+    }
+    else
+    {
+        <div>
+            <p><strong>Short Description:</strong> @Model.MyTown.DescriptionShort</p>
+            <p><strong>Long Description:</strong> @Model.MyTown.DescriptionLong</p>
+           
+        </div>
+        <a asp-page="MyTown/Edit" asp-route-id="@Model.MyTown.Id">Edit town details</a>
+    }
+} else
+{
+    <p>You don't seem to own a town :( If you are mayor of a town, make sure your discord nickname and Minecraft name match.</p>
+}

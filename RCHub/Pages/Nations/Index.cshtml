@@ -1,0 +1,15 @@
+﻿@page
+@model RCHub.Pages.Nations.IndexModel
+@{
+}
+
+<h1>Nations</h1>
+
+
+<p>@Model.Nations.Count nations found</p>
+<ul>
+    @foreach (var item in Model.Nations)
+    {
+        <li><a asp-page="./Details" asp-route-id="@item">@item.Replace("_", " ")</a></li>
+    }
+</ul>

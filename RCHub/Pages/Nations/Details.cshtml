@@ -1,0 +1,45 @@
+﻿@page
+@model RCHub.Pages.Nations.DetailsModel
+@{
+}
+
+<h1>@Model.Name</h1>
+
+<a href="/Data/Maps/@Model.MapFile" target="_blank">
+    <img style="width: 100%" src="/Data/Maps/@Model.MapFile" />
+</a>
+
+@if (Model.TownInfos.Count > 0)
+{
+    <h2>Featured Towns</h2>
+}
+
+@{
+    List<string> featuredTowns = new List<string>(); 
+}
+@foreach (var item in Model.TownInfos.OrderBy(o => o.Name))
+{
+    <div>
+        <h4>@item.Name</h4>
+        <p>Mayor: @item.Mayor</p>
+        <p>Residents: @Model.DynmapTownInfos[item.Name].Residents</p>
+        <p>Description: @item.DescriptionShort</p>
+        <p>Wiki: <a href="@item.WikiLink" target="_blank">@item.WikiLink</a></p>
+    </div>
+    featuredTowns.Add(item.Name);
+}
+
+
+<h2>@(Model.TownInfos.Count > 0 ? "Other" : "Nation") Towns</h2>
+
+@foreach (var item in Model.DynmapTownInfos.OrderBy(o => o.Key))
+{
+    if (featuredTowns.Contains(item.Key))
+        continue;
+
+    <div>
+        <h4>@item.Value.Name</h4>
+        <p>Mayor: @item.Value.Mayor</p>
+        <p>Residents: @item.Value.Residents</p>
+    </div>
+}

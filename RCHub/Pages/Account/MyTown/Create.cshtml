@@ -1,0 +1,25 @@
+﻿@page
+@model CreateModel
+@{
+}
+
+<h1>Add @Model.DisplayName Details</h1>
+
+
+<form method="post">
+    <div>
+        <label asp-for="DescriptionShort"></label>
+        <textarea asp-for="DescriptionShort" rows="5" class="form-control"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="DescriptionLong"></label>
+        <textarea asp-for="DescriptionLong" rows="5" class="form-control"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="WikiLink"></label>
+        <input asp-for="WikiLink" rows="5" class="form-control" />
+    </div>
+    <button class="btn btn-primary" type="submit">Add town details</button>
+</form>

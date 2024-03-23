@@ -1,0 +1,150 @@
+﻿$color-main-bg: #FFF;
+
+/*$color-primary: rgba(228, 100, 80, 1);*/
+$color-primary: #b71766;
+$color-primary-dark: #83164c;
+
+$color-secondary: #05b1a9;
+$color-secondary-dark: #088c86;
+
+$color-link-dark: rgba(0, 45, 85, 1);
+$color-link: rgba(0, 117, 169, 1);
+$color-link-light: rgba(235, 245, 255, 1);
+
+
+$color-gray: #666;
+$color-gray-dark: darken($color-gray, 20%);
+$color-gray-light: lighten($color-gray, 50%);
+
+$color-green: #8cc63f;
+$color-green-light: lighten($color-green, 20%);
+
+$color-red: #c1272d;
+$color-red-light: lighten($color-red, 20%);
+
+$color-yellow: #ffd300;
+$color-yellow-light: lighten($color-yellow, 20%);
+
+$color-yellow: #d9c12e;
+
+$color-drk-blue-light: #ebf5ff;
+$color-drk-blue: #002d55;
+
+.bg-primary {
+    background-color: $color-primary;
+    color: #FFF;
+
+    p, h1, h2, h3, h4, h5 {
+        color: #DDD !important;
+    }
+
+
+    a {
+        color: #FFF;
+    }
+
+    a:hover {
+        color: $color-gray-light;
+    }
+}
+
+.bg-secondary {
+
+    background-color: $color-secondary;
+    color: #FFF;
+
+    p, h1, h2, h3, h4, h5 {
+        color: #DDD !important;
+    } 
+
+    a {
+        color: #FFF;
+    }
+
+    a:hover {
+        color: $color-gray-light;
+    }
+}
+
+
+.bg-gray {
+    background-color: $color-gray-dark;
+    color: #FFF !important;
+    color: #FFF !important;
+
+    p {
+        color: #EEE !important;
+    }
+
+    a {
+        color: #FFF;
+    }
+
+    a:hover {
+        color: $color-gray-light;
+    }
+
+}
+
+.bg-gray-light {
+    background-color: #EEE;
+}
+
+.bg-black {
+    background-color: #000;
+    color: #FFF !important;
+
+    p, h1, h2, h3, h4, h5 {
+        color: #DDD !important;
+    }
+}
+
+.bg-white {
+    background-color: #FFF;
+}
+
+
+.color-gray-medium {
+    color: #999;
+}
+
+.color-white {
+    color: #FFF !important;
+}
+
+.color-gray {
+    color: $color-gray-light;
+}
+
+.color-primary, .text-primary {
+    color: $color-primary !important;
+}
+
+.color-secondary, .text-secondary {
+    color: $color-secondary !important;
+} 
+
+.color-primary-hover:hover {
+    color: $color-primary;
+} 
+
+.color-red-hover:hover {
+    color: $color-red;
+}
+
+.text-danger {
+    color: $color-red;
+}
+
+.text-warning {
+    color: $color-yellow;
+}
+
+
+.text-success {
+    color: $color-green;
+}
+
+.text-white {
+    color: #FFF;
+}
